@@ -1,0 +1,771 @@
+{
+  "contractName": "StoreNumber",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "impl",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeTo",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "storage_",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6040516020806106e28339810160405280805190602001909190505080806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff1663ca446dd9336040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f6f776e65720000000000000000000000000000000000000000000000000000008152506020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b151561017057600080fd5b5af1151561017d57600080fd5b50505050610552806101906000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633659cfe61461010e5780635c60da1b146101475780638da5cb5b1461019c578063f2fde38b146101f1575b600061006c610512565b61007461022a565b9150600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141515156100b257600080fd5b6000368080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509050600080825160208401855af43d604051816000823e826000811461010a578282f35b8282fd5b341561011957600080fd5b610145600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610254565b005b341561015257600080fd5b61015a61022a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a757600080fd5b6101af610394565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101fc57600080fd5b610228600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506103ba565b005b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102b057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415151561030d57600080fd5b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff167fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b60405160405180910390a250565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561041657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561045257600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a380600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6020604051908101604052806000815250905600a165627a7a723058208644029cd110b841a92a738ac4cd2e61647f6f714d70efcc46b970836bcf7f3c0029",
+  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633659cfe61461010e5780635c60da1b146101475780638da5cb5b1461019c578063f2fde38b146101f1575b600061006c610512565b61007461022a565b9150600073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141515156100b257600080fd5b6000368080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509050600080825160208401855af43d604051816000823e826000811461010a578282f35b8282fd5b341561011957600080fd5b610145600480803573ffffffffffffffffffffffffffffffffffffffff16906020019091905050610254565b005b341561015257600080fd5b61015a61022a565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101a757600080fd5b6101af610394565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101fc57600080fd5b610228600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506103ba565b005b6000600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156102b057600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415151561030d57600080fd5b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508073ffffffffffffffffffffffffffffffffffffffff167fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b60405160405180910390a250565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561041657600080fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561045257600080fd5b8073ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a380600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b6020604051908101604052806000815250905600a165627a7a723058208644029cd110b841a92a738ac4cd2e61647f6f714d70efcc46b970836bcf7f3c0029",
+  "sourceMap": "116:210:8:-;;;170:153;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;250:8;221::6;210;;:19;;;;;;;;;;;;;;;;;;145:90;529:10:4;521:5;;:18;;;;;;;;;;;;;;;;;;276:8:8;:19;;;304:10;276:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;170:153;116:210;;;;;;",
+  "deployedSourceMap": "116:210:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;463:13:5;537:17;;:::i;:::-;479:16;:14;:16::i;:::-;463:32;;527:1;510:19;;:5;:19;;;;502:28;;;;;;;;557:8;;537:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;664:1;661;654:4;648:11;641:4;635;631:15;624:5;619:3;606:60;686:14;725:4;719:11;761:4;758:1;753:3;738:28;781:6;800:1;795:28;;;;853:4;848:3;841:17;795:28;816:4;811:3;804:17;277:145;;;;;;;;;;;;;;;;;;;;;;;;;;;;180:91;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;247:20:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;867:173;;;;;;;;;;;;;;;;;;;;;;;;;;;;180:91:5;227:7;250:15;;;;;;;;;;;243:22;;180:91;:::o;277:145::-;680:5:4;;;;;;;;;;;666:19;;:10;:19;;;658:28;;;;;;;;361:4:5;342:23;;:15;;;;;;;;;;;:23;;;;334:32;;;;;;;;391:4;373:15;;:22;;;;;;;;;;;;;;;;;;411:4;402:14;;;;;;;;;;;;277:145;:::o;247:20:4:-;;;;;;;;;;;;;:::o;867:173::-;680:5;;;;;;;;;;;666:19;;:10;:19;;;658:28;;;;;;;;964:1;944:22;;:8;:22;;;;936:31;;;;;;;;1002:8;974:37;;995:5;;;;;;;;;;;974:37;;;;;;;;;;;;1026:8;1018:5;;:16;;;;;;;;;;;;;;;;;;867:173;:::o;116:210:8:-;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.0;\r\nimport \"./KeyValueStorage.sol\";\r\nimport './StorageConsumer.sol';\r\nimport './Proxy.sol';\r\n\r\ncontract StoreNumber is StorageConsumer, Proxy {\r\n    function StoreNumber(KeyValueStorage storage_)\r\n    public\r\n    StorageConsumer(storage_)\r\n    {\r\n        storage_.setAddress(\"owner\",msg.sender);\r\n    }\r\n}",
+  "sourcePath": "D:\\task1\\MySample\\upgrade_smartContracts\\contracts\\StoreNumber.sol",
+  "ast": {
+    "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StoreNumber.sol",
+    "exportedSymbols": {
+      "StoreNumber": [
+        443
+      ]
+    },
+    "id": 444,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 418,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:8"
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/KeyValueStorage.sol",
+        "file": "./KeyValueStorage.sol",
+        "id": 419,
+        "nodeType": "ImportDirective",
+        "scope": 444,
+        "sourceUnit": 159,
+        "src": "25:31:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageConsumer.sol",
+        "file": "./StorageConsumer.sol",
+        "id": 420,
+        "nodeType": "ImportDirective",
+        "scope": 444,
+        "sourceUnit": 411,
+        "src": "58:31:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/Proxy.sol",
+        "file": "./Proxy.sol",
+        "id": 421,
+        "nodeType": "ImportDirective",
+        "scope": 444,
+        "sourceUnit": 394,
+        "src": "91:21:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 422,
+              "name": "StorageConsumer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 410,
+              "src": "140:15:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_StorageConsumer_$410",
+                "typeString": "contract StorageConsumer"
+              }
+            },
+            "id": 423,
+            "nodeType": "InheritanceSpecifier",
+            "src": "140:15:8"
+          },
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 424,
+              "name": "Proxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 393,
+              "src": "157:5:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proxy_$393",
+                "typeString": "contract Proxy"
+              }
+            },
+            "id": 425,
+            "nodeType": "InheritanceSpecifier",
+            "src": "157:5:8"
+          }
+        ],
+        "contractDependencies": [
+          328,
+          393,
+          410,
+          416
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 443,
+        "linearizedBaseContracts": [
+          443,
+          393,
+          328,
+          410,
+          416
+        ],
+        "name": "StoreNumber",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 441,
+              "nodeType": "Block",
+              "src": "265:58:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6f776e6572",
+                        "id": 436,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "296:7:8",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        },
+                        "value": "owner"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 437,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 456,
+                          "src": "304:3:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 438,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "304:10:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 433,
+                        "name": "storage_",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 427,
+                        "src": "276:8:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                          "typeString": "contract KeyValueStorage"
+                        }
+                      },
+                      "id": 435,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setAddress",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 81,
+                      "src": "276:19:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,address) external"
+                      }
+                    },
+                    "id": 439,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "276:39:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 440,
+                  "nodeType": "ExpressionStatement",
+                  "src": "276:39:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 442,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 430,
+                    "name": "storage_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 427,
+                    "src": "250:8:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                      "typeString": "contract KeyValueStorage"
+                    }
+                  }
+                ],
+                "id": 431,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 429,
+                  "name": "StorageConsumer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 410,
+                  "src": "234:15:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_StorageConsumer_$410_$",
+                    "typeString": "type(contract StorageConsumer)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "234:25:8"
+              }
+            ],
+            "name": "StoreNumber",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 428,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 427,
+                  "name": "storage_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 442,
+                  "src": "191:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                    "typeString": "contract KeyValueStorage"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 426,
+                    "name": "KeyValueStorage",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 158,
+                    "src": "191:15:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                      "typeString": "contract KeyValueStorage"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "190:26:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 432,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:8"
+            },
+            "scope": 443,
+            "src": "170:153:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 444,
+        "src": "116:210:8"
+      }
+    ],
+    "src": "0:326:8"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StoreNumber.sol",
+    "exportedSymbols": {
+      "StoreNumber": [
+        443
+      ]
+    },
+    "id": 444,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 418,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:8"
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/KeyValueStorage.sol",
+        "file": "./KeyValueStorage.sol",
+        "id": 419,
+        "nodeType": "ImportDirective",
+        "scope": 444,
+        "sourceUnit": 159,
+        "src": "25:31:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageConsumer.sol",
+        "file": "./StorageConsumer.sol",
+        "id": 420,
+        "nodeType": "ImportDirective",
+        "scope": 444,
+        "sourceUnit": 411,
+        "src": "58:31:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/Proxy.sol",
+        "file": "./Proxy.sol",
+        "id": 421,
+        "nodeType": "ImportDirective",
+        "scope": 444,
+        "sourceUnit": 394,
+        "src": "91:21:8",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 422,
+              "name": "StorageConsumer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 410,
+              "src": "140:15:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_StorageConsumer_$410",
+                "typeString": "contract StorageConsumer"
+              }
+            },
+            "id": 423,
+            "nodeType": "InheritanceSpecifier",
+            "src": "140:15:8"
+          },
+          {
+            "arguments": [],
+            "baseName": {
+              "contractScope": null,
+              "id": 424,
+              "name": "Proxy",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 393,
+              "src": "157:5:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Proxy_$393",
+                "typeString": "contract Proxy"
+              }
+            },
+            "id": 425,
+            "nodeType": "InheritanceSpecifier",
+            "src": "157:5:8"
+          }
+        ],
+        "contractDependencies": [
+          328,
+          393,
+          410,
+          416
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 443,
+        "linearizedBaseContracts": [
+          443,
+          393,
+          328,
+          410,
+          416
+        ],
+        "name": "StoreNumber",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 441,
+              "nodeType": "Block",
+              "src": "265:58:8",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6f776e6572",
+                        "id": 436,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "296:7:8",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        },
+                        "value": "owner"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 437,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 456,
+                          "src": "304:3:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 438,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "304:10:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_02016836a56b71f0d02689e69e326f4f4c1b9057164ef592671cf0d37c8040c0",
+                          "typeString": "literal_string \"owner\""
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 433,
+                        "name": "storage_",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 427,
+                        "src": "276:8:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                          "typeString": "contract KeyValueStorage"
+                        }
+                      },
+                      "id": 435,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setAddress",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 81,
+                      "src": "276:19:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,address) external"
+                      }
+                    },
+                    "id": 439,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "276:39:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 440,
+                  "nodeType": "ExpressionStatement",
+                  "src": "276:39:8"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 442,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 430,
+                    "name": "storage_",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 427,
+                    "src": "250:8:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                      "typeString": "contract KeyValueStorage"
+                    }
+                  }
+                ],
+                "id": 431,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 429,
+                  "name": "StorageConsumer",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 410,
+                  "src": "234:15:8",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_StorageConsumer_$410_$",
+                    "typeString": "type(contract StorageConsumer)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "234:25:8"
+              }
+            ],
+            "name": "StoreNumber",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 428,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 427,
+                  "name": "storage_",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 442,
+                  "src": "191:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                    "typeString": "contract KeyValueStorage"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 426,
+                    "name": "KeyValueStorage",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 158,
+                    "src": "191:15:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                      "typeString": "contract KeyValueStorage"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "190:26:8"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 432,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:8"
+            },
+            "scope": 443,
+            "src": "170:153:8",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 444,
+        "src": "116:210:8"
+      }
+    ],
+    "src": "0:326:8"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-06T08:33:42.734Z"
+}

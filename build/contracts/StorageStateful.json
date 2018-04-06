@@ -1,0 +1,177 @@
+{
+  "contractName": "StorageStateful",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a7230582060058392ca7b1647a3925cc4124eeffc930a08109a3760ab0723ecb1b45bd7280029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a7230582060058392ca7b1647a3925cc4124eeffc930a08109a3760ab0723ecb1b45bd7280029",
+  "sourceMap": "63:58:7:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "63:58:7:-;;;;;",
+  "source": "pragma solidity ^0.4.18;\r\n\r\nimport \"./KeyValueStorage.sol\";\r\n\r\ncontract StorageStateful {\r\n  KeyValueStorage _storage;\r\n}",
+  "sourcePath": "D:\\task1\\MySample\\upgrade_smartContracts\\contracts\\StorageStateful.sol",
+  "ast": {
+    "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageStateful.sol",
+    "exportedSymbols": {
+      "StorageStateful": [
+        416
+      ]
+    },
+    "id": 417,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 412,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/KeyValueStorage.sol",
+        "file": "./KeyValueStorage.sol",
+        "id": 413,
+        "nodeType": "ImportDirective",
+        "scope": 417,
+        "sourceUnit": 159,
+        "src": "28:31:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 416,
+        "linearizedBaseContracts": [
+          416
+        ],
+        "name": "StorageStateful",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 415,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 416,
+            "src": "93:24:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+              "typeString": "contract KeyValueStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 414,
+              "name": "KeyValueStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 158,
+              "src": "93:15:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                "typeString": "contract KeyValueStorage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 417,
+        "src": "63:58:7"
+      }
+    ],
+    "src": "0:121:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageStateful.sol",
+    "exportedSymbols": {
+      "StorageStateful": [
+        416
+      ]
+    },
+    "id": 417,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 412,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:7"
+      },
+      {
+        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/KeyValueStorage.sol",
+        "file": "./KeyValueStorage.sol",
+        "id": 413,
+        "nodeType": "ImportDirective",
+        "scope": 417,
+        "sourceUnit": 159,
+        "src": "28:31:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 416,
+        "linearizedBaseContracts": [
+          416
+        ],
+        "name": "StorageStateful",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 415,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 416,
+            "src": "93:24:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+              "typeString": "contract KeyValueStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 414,
+              "name": "KeyValueStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 158,
+              "src": "93:15:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                "typeString": "contract KeyValueStorage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 417,
+        "src": "63:58:7"
+      }
+    ],
+    "src": "0:121:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-04-06T08:33:42.734Z"
+}
