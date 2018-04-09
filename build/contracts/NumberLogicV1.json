@@ -16,24 +16,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b61015f8061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fb5c1cb14610046575b600080fd5b341561005157600080fd5b6100676004808035906020019091905050610069565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e2a4853a826040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d626572000000000000000000000000000000000000000000000000815250602001828152602001915050600060405180830381600087803b151561012057600080fd5b5af1151561012d57600080fd5b505050505600a165627a7a72305820585328db1d828323f9f5f2fe77da151fcb4bdbadf3b49c863a9eb012bfc389970029",
-  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fb5c1cb14610046575b600080fd5b341561005157600080fd5b6100676004808035906020019091905050610069565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e2a4853a826040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d626572000000000000000000000000000000000000000000000000815250602001828152602001915050600060405180830381600087803b151561012057600080fd5b5af1151561012d57600080fd5b505050505600a165627a7a72305820585328db1d828323f9f5f2fe77da151fcb4bdbadf3b49c863a9eb012bfc389970029",
-  "sourceMap": "62:271:2:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "62:271:2:-;;;;;;;;;;;;;;;;;;;;;;;;116:99;;;;;;;;;;;;;;;;;;;;;;;;;;;160:8;;;;;;;;;;;:16;;;189:7;160:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;116:99;:::o",
-  "source": "pragma solidity ^0.4.0;\r\n\r\nimport \"./StorageStateful.sol\";\r\n\r\ncontract NumberLogicV1 is StorageStateful{\r\n    \r\n    function setNumber(uint _number) {\r\n        _storage.setUint(\"MyNumber\", _number);\r\n        \r\n    }\r\n    \r\n    // function getNumber()public returns(uint){\r\n    //     return _storage.getUint(\"MyNumber\");\r\n    // }\r\n}\r\n",
+  "bytecode": "0x6060604052341561000f57600080fd5b6101628061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fb5c1cb14610046575b600080fd5b341561005157600080fd5b6100676004808035906020019091905050610069565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e2a4853a826014026040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d626572000000000000000000000000000000000000000000000000815250602001828152602001915050600060405180830381600087803b151561012357600080fd5b5af1151561013057600080fd5b505050505600a165627a7a7230582093a3daecdc5f82303b2ffd59276dbe7ffc0cd8b439a5b79e357b23cafa2c7bc80029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633fb5c1cb14610046575b600080fd5b341561005157600080fd5b6100676004808035906020019091905050610069565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663e2a4853a826014026040518263ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d626572000000000000000000000000000000000000000000000000815250602001828152602001915050600060405180830381600087803b151561012357600080fd5b5af1151561013057600080fd5b505050505600a165627a7a7230582093a3daecdc5f82303b2ffd59276dbe7ffc0cd8b439a5b79e357b23cafa2c7bc80029",
+  "sourceMap": "62:170:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "62:170:1:-;;;;;;;;;;;;;;;;;;;;;;;;116:107;;;;;;;;;;;;;;;;;;;;;;;;;;;167:8;;;;;;;;;;;:16;;;199:7;196:2;:10;167:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;116:107;:::o",
+  "source": "pragma solidity ^0.4.0;\r\n\r\nimport \"./StorageStateful.sol\";\r\n\r\ncontract NumberLogicV1 is StorageStateful{\r\n    \r\n    function setNumber(uint _number) public {\r\n        _storage.setUint(\"MyNumber\", 20*_number);        \r\n    }\r\n    \r\n}\r\n",
   "sourcePath": "D:\\task1\\MySample\\upgrade_smartContracts\\contracts\\NumberLogicV1.sol",
   "ast": {
     "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/NumberLogicV1.sol",
     "exportedSymbols": {
       "NumberLogicV1": [
-        234
+        179
       ]
     },
-    "id": 235,
+    "id": 180,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 217,
+        "id": 160,
         "literals": [
           "solidity",
           "^",
@@ -41,16 +41,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:1"
       },
       {
         "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageStateful.sol",
         "file": "./StorageStateful.sol",
-        "id": 218,
+        "id": 161,
         "nodeType": "ImportDirective",
-        "scope": 235,
-        "sourceUnit": 417,
-        "src": "27:31:2",
+        "scope": 180,
+        "sourceUnit": 203,
+        "src": "27:31:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -60,40 +60,40 @@
             "arguments": [],
             "baseName": {
               "contractScope": null,
-              "id": 219,
+              "id": 162,
               "name": "StorageStateful",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 416,
-              "src": "88:15:2",
+              "referencedDeclaration": 202,
+              "src": "88:15:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageStateful_$416",
+                "typeIdentifier": "t_contract$_StorageStateful_$202",
                 "typeString": "contract StorageStateful"
               }
             },
-            "id": 220,
+            "id": 163,
             "nodeType": "InheritanceSpecifier",
-            "src": "88:15:2"
+            "src": "88:15:1"
           }
         ],
         "contractDependencies": [
-          416
+          202
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 234,
+        "id": 179,
         "linearizedBaseContracts": [
-          234,
-          416
+          179,
+          202
         ],
         "name": "NumberLogicV1",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 232,
+              "id": 177,
               "nodeType": "Block",
-              "src": "149:66:2",
+              "src": "156:67:1",
               "statements": [
                 {
                   "expression": {
@@ -102,14 +102,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4d794e756d626572",
-                        "id": 228,
+                        "id": 171,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "177:10:2",
+                        "src": "184:10:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b44105589632a55e399158f4018e37db6484b5cd95f6a7b28c412c0758d3f4f8",
@@ -119,12 +119,49 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 229,
-                        "name": "_number",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
-                        "src": "189:7:2",
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 174,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "3230",
+                          "id": 172,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "196:2:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_20_by_1",
+                            "typeString": "int_const 20"
+                          },
+                          "value": "20"
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "*",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 173,
+                          "name": "_number",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 165,
+                          "src": "199:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "196:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -144,18 +181,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 225,
+                        "id": 168,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 415,
-                        "src": "160:8:2",
+                        "referencedDeclaration": 201,
+                        "src": "167:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_KeyValueStorage_$158",
                           "typeString": "contract KeyValueStorage"
                         }
                       },
-                      "id": 227,
+                      "id": 170,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -163,13 +200,13 @@
                       "memberName": "setUint",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 98,
-                      "src": "160:16:2",
+                      "src": "167:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_uint256_$returns$__$",
                         "typeString": "function (bytes32,uint256) external"
                       }
                     },
-                    "id": 230,
+                    "id": 175,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -177,20 +214,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "160:37:2",
+                    "src": "167:40:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 231,
+                  "id": 176,
                   "nodeType": "ExpressionStatement",
-                  "src": "160:37:2"
+                  "src": "167:40:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 233,
+            "id": 178,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -198,16 +235,16 @@
             "name": "setNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 223,
+              "id": 166,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 222,
+                  "id": 165,
                   "name": "_number",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "135:12:2",
+                  "scope": 178,
+                  "src": "135:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -215,10 +252,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 221,
+                    "id": 164,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "135:4:2",
+                    "src": "135:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -228,40 +265,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "134:14:2"
+              "src": "134:14:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 224,
+              "id": 167,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "149:0:2"
+              "src": "156:0:1"
             },
-            "scope": 234,
-            "src": "116:99:2",
+            "scope": 179,
+            "src": "116:107:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 235,
-        "src": "62:271:2"
+        "scope": 180,
+        "src": "62:170:1"
       }
     ],
-    "src": "0:335:2"
+    "src": "0:234:1"
   },
   "legacyAST": {
     "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/NumberLogicV1.sol",
     "exportedSymbols": {
       "NumberLogicV1": [
-        234
+        179
       ]
     },
-    "id": 235,
+    "id": 180,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 217,
+        "id": 160,
         "literals": [
           "solidity",
           "^",
@@ -269,16 +306,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:1"
       },
       {
         "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageStateful.sol",
         "file": "./StorageStateful.sol",
-        "id": 218,
+        "id": 161,
         "nodeType": "ImportDirective",
-        "scope": 235,
-        "sourceUnit": 417,
-        "src": "27:31:2",
+        "scope": 180,
+        "sourceUnit": 203,
+        "src": "27:31:1",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -288,40 +325,40 @@
             "arguments": [],
             "baseName": {
               "contractScope": null,
-              "id": 219,
+              "id": 162,
               "name": "StorageStateful",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 416,
-              "src": "88:15:2",
+              "referencedDeclaration": 202,
+              "src": "88:15:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageStateful_$416",
+                "typeIdentifier": "t_contract$_StorageStateful_$202",
                 "typeString": "contract StorageStateful"
               }
             },
-            "id": 220,
+            "id": 163,
             "nodeType": "InheritanceSpecifier",
-            "src": "88:15:2"
+            "src": "88:15:1"
           }
         ],
         "contractDependencies": [
-          416
+          202
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 234,
+        "id": 179,
         "linearizedBaseContracts": [
-          234,
-          416
+          179,
+          202
         ],
         "name": "NumberLogicV1",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 232,
+              "id": 177,
               "nodeType": "Block",
-              "src": "149:66:2",
+              "src": "156:67:1",
               "statements": [
                 {
                   "expression": {
@@ -330,14 +367,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4d794e756d626572",
-                        "id": 228,
+                        "id": 171,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "177:10:2",
+                        "src": "184:10:1",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b44105589632a55e399158f4018e37db6484b5cd95f6a7b28c412c0758d3f4f8",
@@ -347,12 +384,49 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 229,
-                        "name": "_number",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 222,
-                        "src": "189:7:2",
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 174,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "hexValue": "3230",
+                          "id": 172,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "196:2:1",
+                          "subdenomination": null,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_20_by_1",
+                            "typeString": "int_const 20"
+                          },
+                          "value": "20"
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "*",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 173,
+                          "name": "_number",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 165,
+                          "src": "199:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "196:10:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -372,18 +446,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 225,
+                        "id": 168,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 415,
-                        "src": "160:8:2",
+                        "referencedDeclaration": 201,
+                        "src": "167:8:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_KeyValueStorage_$158",
                           "typeString": "contract KeyValueStorage"
                         }
                       },
-                      "id": 227,
+                      "id": 170,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -391,13 +465,13 @@
                       "memberName": "setUint",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 98,
-                      "src": "160:16:2",
+                      "src": "167:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_uint256_$returns$__$",
                         "typeString": "function (bytes32,uint256) external"
                       }
                     },
-                    "id": 230,
+                    "id": 175,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -405,20 +479,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "160:37:2",
+                    "src": "167:40:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 231,
+                  "id": 176,
                   "nodeType": "ExpressionStatement",
-                  "src": "160:37:2"
+                  "src": "167:40:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 233,
+            "id": 178,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -426,16 +500,16 @@
             "name": "setNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 223,
+              "id": 166,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 222,
+                  "id": 165,
                   "name": "_number",
                   "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "135:12:2",
+                  "scope": 178,
+                  "src": "135:12:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -443,10 +517,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 221,
+                    "id": 164,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "135:4:2",
+                    "src": "135:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -456,27 +530,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "134:14:2"
+              "src": "134:14:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 224,
+              "id": 167,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "149:0:2"
+              "src": "156:0:1"
             },
-            "scope": 234,
-            "src": "116:99:2",
+            "scope": 179,
+            "src": "116:107:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 235,
-        "src": "62:271:2"
+        "scope": 180,
+        "src": "62:170:1"
       }
     ],
-    "src": "0:335:2"
+    "src": "0:234:1"
   },
   "compiler": {
     "name": "solc",
@@ -486,10 +560,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x43616c2e3a39d1c89eded2a774f641943aec6118",
-      "transactionHash": "0x4d8574a1fe11b1661dbc83d72146f3eb55f75cd5c5774853a9f3909801de12c2"
+      "address": "0x3944aab2ebffd71c2e9615e23ccd595b7da72de3",
+      "transactionHash": "0x4c2e56b32319750018e71ef8e5d034a1bdf43f6ec9091638a071cfaf38043d4c"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-08T13:58:46.390Z"
+  "updatedAt": "2018-04-09T07:25:43.170Z"
 }

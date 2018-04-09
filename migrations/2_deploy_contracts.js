@@ -7,15 +7,16 @@ module.exports = function(deployer) {
 
   deployer.deploy(NumberLogicV1);
   deployer.deploy(NumberLogicV2);
-  console.log(NumberLogicV1.address);
+  
   deployer.deploy(KeyValueStorage);
 //   console.log(KeyValueStorage.address);
-  deployer.deploy(StoreNumber,KeyValueStorage.address).then(function(){
+ deployer.deploy(StoreNumber,KeyValueStorage.address)
+  .then(function(){
     StoreNumber.deployed().then(function(sn){
         console.log(sn.address);
-        sn.upgradeTo(NumberLogicV1.address).then(function(res){
-        console.log(res);
-        })
+        // sn.upgradeTo(NumberLogicV1.address).then(function(res){
+        // console.log(res);
+        // })
     }) 
 });
 };
