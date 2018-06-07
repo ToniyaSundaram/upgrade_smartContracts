@@ -15,7 +15,7 @@ contract Proxy is Ownable {
   function upgradeTo(address impl) public onlyOwner {
     require(_implementation != impl);
     _implementation = impl;
-    Upgraded(impl);
+    emit Upgraded(impl);
   }
  
   function () payable public {

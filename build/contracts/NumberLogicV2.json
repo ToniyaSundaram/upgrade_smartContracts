@@ -16,24 +16,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b6101688061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f2c9ecd814610046575b600080fd5b341561005157600080fd5b61005961006f565b6040518082815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bd02d0f56040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d6265720000000000000000000000000000000000000000000000008152506020019050602060405180830381600087803b151561012057600080fd5b5af1151561012d57600080fd5b505050604051805190509050905600a165627a7a723058202a50a09ad6edaf08c8d10b26028354fb8d68d7c779fc8fc940815511fae460060029",
-  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f2c9ecd814610046575b600080fd5b341561005157600080fd5b61005961006f565b6040518082815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bd02d0f56040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d6265720000000000000000000000000000000000000000000000008152506020019050602060405180830381600087803b151561012057600080fd5b5af1151561012d57600080fd5b505050604051805190509050905600a165627a7a723058202a50a09ad6edaf08c8d10b26028354fb8d68d7c779fc8fc940815511fae460060029",
-  "sourceMap": "62:316:2:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "62:316:2:-;;;;;;;;;;;;;;;;;;;;;;;;281:94;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;316:4;339:8;;;;;;;;;;;:16;;;:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;332:35;;281:94;:::o",
+  "bytecode": "0x608060405234801561001057600080fd5b5061018f806100206000396000f300608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f2c9ecd814610046575b600080fd5b34801561005257600080fd5b5061005b610071565b6040518082815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bd02d0f56040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d6265720000000000000000000000000000000000000000000000008152506020019050602060405180830381600087803b15801561012357600080fd5b505af1158015610137573d6000803e3d6000fd5b505050506040513d602081101561014d57600080fd5b81019080805190602001909291905050509050905600a165627a7a723058202ea55f352283cb063eadab041cc5dcc8e97b6d7b57b10a68d50aad14bd77cc330029",
+  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063f2c9ecd814610046575b600080fd5b34801561005257600080fd5b5061005b610071565b6040518082815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663bd02d0f56040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040180807f4d794e756d6265720000000000000000000000000000000000000000000000008152506020019050602060405180830381600087803b15801561012357600080fd5b505af1158015610137573d6000803e3d6000fd5b505050506040513d602081101561014d57600080fd5b81019080805190602001909291905050509050905600a165627a7a723058202ea55f352283cb063eadab041cc5dcc8e97b6d7b57b10a68d50aad14bd77cc330029",
+  "sourceMap": "62:316:11:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;62:316:11;;;;;;;",
+  "deployedSourceMap": "62:316:11:-;;;;;;;;;;;;;;;;;;;;;;;;281:94;;8:9:-1;5:2;;;30:1;27;20:12;5:2;281:94:11;;;;;;;;;;;;;;;;;;;;;;;;316:4;339:8;;;;;;;;;;;:16;;;:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;339:28:11;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;339:28:11;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;339:28:11;;;;;;;;;;;;;;;;332:35;;281:94;:::o",
   "source": "pragma solidity ^0.4.0;\r\n\r\nimport \"./StorageStateful.sol\";\r\n\r\ncontract NumberLogicV2 is StorageStateful{\r\n    // uint number;\r\n    // function setNumber(uint _number) {\r\n    //     number = 20*_number;\r\n    //     _storage.setUint(\"MyNumber\", number);        \r\n    // }\r\n    \r\n    function getNumber()public returns(uint){\r\n        return _storage.getUint(\"MyNumber\");\r\n    }\r\n}\r\n",
-  "sourcePath": "D:\\task1\\MySample\\upgrade_smartContracts\\contracts\\NumberLogicV2.sol",
+  "sourcePath": "D:\\task1\\UpgradeContracts\\contracts\\NumberLogicV2.sol",
   "ast": {
-    "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/NumberLogicV2.sol",
+    "absolutePath": "/D/task1/UpgradeContracts/contracts/NumberLogicV2.sol",
     "exportedSymbols": {
       "NumberLogicV2": [
-        196
+        665
       ]
     },
-    "id": 197,
+    "id": 666,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 181,
+        "id": 650,
         "literals": [
           "solidity",
           "^",
@@ -41,59 +41,59 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:11"
       },
       {
-        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageStateful.sol",
+        "absolutePath": "/D/task1/UpgradeContracts/contracts/StorageStateful.sol",
         "file": "./StorageStateful.sol",
-        "id": 182,
+        "id": 651,
         "nodeType": "ImportDirective",
-        "scope": 197,
-        "sourceUnit": 203,
-        "src": "27:31:2",
+        "scope": 666,
+        "sourceUnit": 810,
+        "src": "27:31:11",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [
           {
-            "arguments": [],
+            "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 183,
+              "id": 652,
               "name": "StorageStateful",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 202,
-              "src": "88:15:2",
+              "referencedDeclaration": 809,
+              "src": "88:15:11",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageStateful_$202",
+                "typeIdentifier": "t_contract$_StorageStateful_$809",
                 "typeString": "contract StorageStateful"
               }
             },
-            "id": 184,
+            "id": 653,
             "nodeType": "InheritanceSpecifier",
-            "src": "88:15:2"
+            "src": "88:15:11"
           }
         ],
         "contractDependencies": [
-          202
+          809
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 196,
+        "id": 665,
         "linearizedBaseContracts": [
-          196,
-          202
+          665,
+          809
         ],
         "name": "NumberLogicV2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 194,
+              "id": 663,
               "nodeType": "Block",
-              "src": "321:54:2",
+              "src": "321:54:11",
               "statements": [
                 {
                   "expression": {
@@ -102,14 +102,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4d794e756d626572",
-                        "id": 191,
+                        "id": 660,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "356:10:2",
+                        "src": "356:10:11",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b44105589632a55e399158f4018e37db6484b5cd95f6a7b28c412c0758d3f4f8",
@@ -127,32 +127,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 189,
+                        "id": 658,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 201,
-                        "src": "339:8:2",
+                        "referencedDeclaration": 808,
+                        "src": "339:8:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                          "typeIdentifier": "t_contract$_KeyValueStorage_$550",
                           "typeString": "contract KeyValueStorage"
                         }
                       },
-                      "id": 190,
+                      "id": 659,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getUint",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 49,
-                      "src": "339:16:2",
+                      "referencedDeclaration": 441,
+                      "src": "339:16:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_uint256_$",
                         "typeString": "function (bytes32) view external returns (uint256)"
                       }
                     },
-                    "id": 192,
+                    "id": 661,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -160,21 +160,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "339:28:2",
+                    "src": "339:28:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 188,
-                  "id": 193,
+                  "functionReturnParameters": 657,
+                  "id": 662,
                   "nodeType": "Return",
-                  "src": "332:35:2"
+                  "src": "332:35:11"
                 }
               ]
             },
             "documentation": null,
-            "id": 195,
+            "id": 664,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -182,23 +182,23 @@
             "name": "getNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 185,
+              "id": 654,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "299:2:2"
+              "src": "299:2:11"
             },
             "payable": false,
             "returnParameters": {
-              "id": 188,
+              "id": 657,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 187,
+                  "id": 656,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 195,
-                  "src": "316:4:2",
+                  "scope": 664,
+                  "src": "316:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -206,10 +206,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 186,
+                    "id": 655,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "316:4:2",
+                    "src": "316:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -219,33 +219,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "315:6:2"
+              "src": "315:6:11"
             },
-            "scope": 196,
-            "src": "281:94:2",
+            "scope": 665,
+            "src": "281:94:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 197,
-        "src": "62:316:2"
+        "scope": 666,
+        "src": "62:316:11"
       }
     ],
-    "src": "0:380:2"
+    "src": "0:380:11"
   },
   "legacyAST": {
-    "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/NumberLogicV2.sol",
+    "absolutePath": "/D/task1/UpgradeContracts/contracts/NumberLogicV2.sol",
     "exportedSymbols": {
       "NumberLogicV2": [
-        196
+        665
       ]
     },
-    "id": 197,
+    "id": 666,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 181,
+        "id": 650,
         "literals": [
           "solidity",
           "^",
@@ -253,59 +253,59 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:11"
       },
       {
-        "absolutePath": "/D/task1/MySample/upgrade_smartContracts/contracts/StorageStateful.sol",
+        "absolutePath": "/D/task1/UpgradeContracts/contracts/StorageStateful.sol",
         "file": "./StorageStateful.sol",
-        "id": 182,
+        "id": 651,
         "nodeType": "ImportDirective",
-        "scope": 197,
-        "sourceUnit": 203,
-        "src": "27:31:2",
+        "scope": 666,
+        "sourceUnit": 810,
+        "src": "27:31:11",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "baseContracts": [
           {
-            "arguments": [],
+            "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 183,
+              "id": 652,
               "name": "StorageStateful",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 202,
-              "src": "88:15:2",
+              "referencedDeclaration": 809,
+              "src": "88:15:11",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageStateful_$202",
+                "typeIdentifier": "t_contract$_StorageStateful_$809",
                 "typeString": "contract StorageStateful"
               }
             },
-            "id": 184,
+            "id": 653,
             "nodeType": "InheritanceSpecifier",
-            "src": "88:15:2"
+            "src": "88:15:11"
           }
         ],
         "contractDependencies": [
-          202
+          809
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 196,
+        "id": 665,
         "linearizedBaseContracts": [
-          196,
-          202
+          665,
+          809
         ],
         "name": "NumberLogicV2",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 194,
+              "id": 663,
               "nodeType": "Block",
-              "src": "321:54:2",
+              "src": "321:54:11",
               "statements": [
                 {
                   "expression": {
@@ -314,14 +314,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4d794e756d626572",
-                        "id": 191,
+                        "id": 660,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "356:10:2",
+                        "src": "356:10:11",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b44105589632a55e399158f4018e37db6484b5cd95f6a7b28c412c0758d3f4f8",
@@ -339,32 +339,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 189,
+                        "id": 658,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 201,
-                        "src": "339:8:2",
+                        "referencedDeclaration": 808,
+                        "src": "339:8:11",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_KeyValueStorage_$158",
+                          "typeIdentifier": "t_contract$_KeyValueStorage_$550",
                           "typeString": "contract KeyValueStorage"
                         }
                       },
-                      "id": 190,
+                      "id": 659,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getUint",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 49,
-                      "src": "339:16:2",
+                      "referencedDeclaration": 441,
+                      "src": "339:16:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_uint256_$",
                         "typeString": "function (bytes32) view external returns (uint256)"
                       }
                     },
-                    "id": 192,
+                    "id": 661,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -372,21 +372,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "339:28:2",
+                    "src": "339:28:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 188,
-                  "id": 193,
+                  "functionReturnParameters": 657,
+                  "id": 662,
                   "nodeType": "Return",
-                  "src": "332:35:2"
+                  "src": "332:35:11"
                 }
               ]
             },
             "documentation": null,
-            "id": 195,
+            "id": 664,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -394,23 +394,23 @@
             "name": "getNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 185,
+              "id": 654,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "299:2:2"
+              "src": "299:2:11"
             },
             "payable": false,
             "returnParameters": {
-              "id": 188,
+              "id": 657,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 187,
+                  "id": 656,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 195,
-                  "src": "316:4:2",
+                  "scope": 664,
+                  "src": "316:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -418,10 +418,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 186,
+                    "id": 655,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "316:4:2",
+                    "src": "316:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -431,24 +431,24 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "315:6:2"
+              "src": "315:6:11"
             },
-            "scope": 196,
-            "src": "281:94:2",
+            "scope": 665,
+            "src": "281:94:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 197,
-        "src": "62:316:2"
+        "scope": 666,
+        "src": "62:316:11"
       }
     ],
-    "src": "0:380:2"
+    "src": "0:380:11"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
     "5777": {
@@ -459,5 +459,5 @@
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-04-09T07:25:43.171Z"
+  "updatedAt": "2018-06-07T03:30:52.545Z"
 }
